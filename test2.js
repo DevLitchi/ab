@@ -4,10 +4,12 @@ const fs = require('fs');
 
 async function scrapeo(inicio, fin) {
     return new Promise(async (resolve, reject) => {
-    const browser = await puppeteer.launch({
-        headless: true,
-        defaultViewport: null
-    });
+        const browser = await puppeteer.launch({
+            headless: true,
+            defaultViewport: null,
+            args: ['--no-sandbox'] // Agrega esta línea
+        });
+        
     const eventoanormal = { id: 'ev0000710', name: 'Writers Guild of America, USA' };
     const directorioEventos = [
         { id: 'ev0000123', name: 'BAFTA Awards' },
@@ -181,7 +183,12 @@ async function procesarDatosPeliculas() {
     }
 
     async function scrapeMovieData(title, year) {
-        const browser = await puppeteer.launch({ headless: true });
+        const browser = await puppeteer.launch({
+            headless: true,
+            defaultViewport: null,
+            args: ['--no-sandbox'] // Agrega esta línea
+        });
+        
         const page = await
         browser.newPage();
         await page.setExtraHTTPHeaders({ 'Accept-Language': 'es' });

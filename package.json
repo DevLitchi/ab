@@ -13,8 +13,9 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.19.2",
+    "fs": "^0.0.1-security",
     "populate": "^0.1.4",
-    "puppeteer": "^22.9.0",
+    "puppeteer": "^22.10.0",
     "readline": "^1.3.0"
   }
 }
