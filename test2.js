@@ -1,5 +1,6 @@
-import puppeteer from 'puppeteer';
-import fs from 'fs';
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+
 
 async function scrapeo(inicio, fin) {
     return new Promise(async (resolve, reject) => {
