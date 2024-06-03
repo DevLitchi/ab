@@ -96,27 +96,8 @@ export async function scrapeo(inicio, fin) {
 }
 
 
-export function rangoAños() {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
 
-  rl.question('Ingrese el año de inicio: ', (inicio) => {
-    rl.question('Ingrese el año de fin: ', async (fin) => {
-      rl.close();
-      await scrapeo(inicio, fin);
-    });
-  });
-}
-export async function extraerInfoPeliculas() {
-  const browser = await puppeteer.launch({
-    headless: true,
-    defaultViewport: null
-  });
-  
 
-}
 export function all() {
   function extractTitlesByYear(data) {
     const titlesByYear = {};
