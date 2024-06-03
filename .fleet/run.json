@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "name": "Node.js configuration",
+            "file": "a.js",
+            
+        },
+        
+    ]
+}
