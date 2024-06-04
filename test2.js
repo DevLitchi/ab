@@ -282,7 +282,7 @@ async function procesarDatosPeliculas() {
 // Llamar a la función para procesar los datos de películas
 
 async function main() {
-    // await scrapeo(2015, 2024);
+    await scrapeo(2015, 2024);
     await procesarDatosPeliculas();
 }
 
