@@ -9,88 +9,89 @@ async function scrapeo(inicio, fin) {
             defaultViewport: null,
             args: ['--no-sandbox'] // Agrega esta línea
         });
-        
-    const eventoanormal = { id: 'ev0000710', name: 'Writers Guild of America, USA' };
-    const directorioEventos = [
-        { id: 'ev0000123', name: 'BAFTA Awards' },
-        { id: 'ev0000133', name: 'Critics Choice Awards' },
-        { id: 'ev0000003', name: 'Oscar' },
-        { id: 'ev0000212', name: 'Directors Guild of America, USA' },
-        { id: 'ev0000292', name: 'Golden Globes, USA' },
-        { id: 'ev0000598', name: 'Screen Actors Guild Awards' }
-    ];
 
-    let allNominations = {};
+        const eventoanormal = { id: 'ev0000710', name: 'Writers Guild of America, USA' };
+        const directorioEventos = [
+            { id: 'ev0000123', name: 'BAFTA Awards' },
+            { id: 'ev0000133', name: 'Critics Choice Awards' },
+            { id: 'ev0000003', name: 'Oscar' },
+            { id: 'ev0000212', name: 'Directors Guild of America, USA' },
+            { id: 'ev0000292', name: 'Golden Globes, USA' },
+            { id: 'ev0000598', name: 'Screen Actors Guild Awards' }
+        ];
 
-    for (let YearAct = inicio; YearAct <= fin; YearAct++) {
-        for (let event of directorioEventos) {
-            const page = await browser.newPage();
-            await page.setExtraHTTPHeaders({
-                'Accept-Language': 'en'
-            });
-            const eventURL = `https://www.imdb.com/event/${event.id}/${YearAct}/1/`;
-            try {
-                await page.goto(eventURL, { waitUntil: 'networkidle2' });
-                await page.waitForSelector('[class="event-widgets__nomination-details"]', { timeout: 5000 });
+        let allNominations = {};
 
-                const nominados = await page.evaluate(() => {
-                    const a = document.querySelectorAll('.event-widgets__award-categories');
-                    const b = Array.from(a[0].children);
-                    const arra = [];
+        for (let YearAct = inicio; YearAct <= fin; YearAct++) {
+            for (let event of directorioEventos) {
+                const page = await browser.newPage();
+                await page.setExtraHTTPHeaders({
+                    'Accept-Language': 'en'
+                });
+                const eventURL = `https://www.imdb.com/event/${event.id}/${YearAct}/1/`;
+                try {
+                    await page.goto(eventURL, { waitUntil: 'networkidle2' });
+                    await page.waitForSelector('[class="event-widgets__nomination-details"]', { timeout: 5000 });
 
-                    for (let item of b) {
-                        const categoria = {};
-                        categoria.CATEGORIA = item.querySelector('.event-widgets__award-category-name').innerText.trim();
-                        categoria.nominados = [];
-                        categoria.GANADOR = "";
+                    const nominados = await page.evaluate(() => {
+                        const a = document.querySelectorAll('.event-widgets__award-categories');
+                        const b = Array.from(a[0].children);
+                        const arra = [];
 
-                        const nominaciones = item.querySelectorAll('.event-widgets__award-nomination');
-                        for (let nominacion of nominaciones) {
-                            const nominado = {};
-                            nominado.ID = nominacion.querySelector('.event-widgets__nominee-name a').href.split('/')[4].split('?')[0];
-                            nominado.URL = nominacion.querySelector('.event-widgets__nominee-name a').href.split('?')[0];
-                            nominado.PREMIOS = nominado.URL + "awards";
-                            nominado.TITULO = nominacion.querySelector('.event-widgets__nominee-name a').innerText.trim();
-                            categoria.nominados.push(nominado);
+                        for (let item of b) {
+                            const categoria = {};
+                            categoria.CATEGORIA = item.querySelector('.event-widgets__award-category-name').innerText.trim();
+                            categoria.nominados = [];
+                            categoria.GANADOR = "";
 
-                            const winnerBadge = nominacion.querySelector('.event-widgets__winner-badge');
-                            if (winnerBadge) {
-                                categoria.GANADOR = nominado.TITULO;
+                            const nominaciones = item.querySelectorAll('.event-widgets__award-nomination');
+                            for (let nominacion of nominaciones) {
+                                const nominado = {};
+                                nominado.ID = nominacion.querySelector('.event-widgets__nominee-name a').href.split('/')[4].split('?')[0];
+                                nominado.URL = nominacion.querySelector('.event-widgets__nominee-name a').href.split('?')[0];
+                                nominado.PREMIOS = nominado.URL + "awards";
+                                nominado.TITULO = nominacion.querySelector('.event-widgets__nominee-name a').innerText.trim();
+                                categoria.nominados.push(nominado);
+
+                                const winnerBadge = nominacion.querySelector('.event-widgets__winner-badge');
+                                if (winnerBadge) {
+                                    categoria.GANADOR = nominado.TITULO;
+                                }
+
+                                const posterImage = nominacion.querySelector('.event-widgets__nominee-image-poster');
+                                if (posterImage) {
+                                    nominado.poster = posterImage.src;
+                                }
                             }
 
-                            const posterImage = nominacion.querySelector('.event-widgets__nominee-image-poster');
-                            if (posterImage) {
-                                nominado.poster = posterImage.src;
-                            }
+                            arra.push(categoria);
                         }
 
-                        arra.push(categoria);
+                        return arra;
+                    });
+
+                    if (nominados.length > 0) {
+                        if (!(YearAct in allNominations)) {
+                            allNominations[YearAct] = {};
+                        }
+                        allNominations[YearAct][event.name] = nominados;
                     }
 
-                    return arra;
-                });
-
-                if (nominados.length > 0) {
-                    if (!(YearAct in allNominations)) {
-                        allNominations[YearAct] = {};
-                    }
-                    allNominations[YearAct][event.name] = nominados;
+                    await page.close();
+                } catch (error) {
+                    console.error(`Error en el evento ${event.name} del año ${YearAct}: ES PROBABLE QUE LA PAGINA NO ESTE EN FUNCIONAMIENTO`);
+                    console.error(error);
+                    await page.close();
                 }
-
-                await page.close();
-            } catch (error) {
-                console.error(`Error en el evento ${event.name} del año ${YearAct}: ES PROBABLE QUE LA PAGINA NO ESTE EN FUNCIONAMIENTO`);
-                console.error(error);
-                await page.close();
             }
         }
-    }
 
-    fs.writeFileSync(`test.json`, JSON.stringify(allNominations, null, 2));
-    await browser.close();
-    resolve();
-}
-)};
+        fs.writeFileSync(`test.json`, JSON.stringify(allNominations, null, 2));
+        await browser.close();
+        resolve();
+    }
+    )
+};
 
 const movieCategories = new Set([
     "Best Film",
@@ -171,11 +172,12 @@ async function extractTitlesByYear(data) {
         // Convertir Set a Array
         titlesByYear[year] = Array.from(titlesByYear[year]);
     }
-    console.log(titlesByYear);
+    console.log("Datos de películas extraídos con éxito.")
     return titlesByYear; // Devolver un objeto con los títulos por año (cada año es una propiedad) y los títulos son un array de strings únicos     
 }
 
 async function procesarDatosPeliculas() {
+    console.log("Procesando datos de películas...");
     console.time("Tiempo de ejecución");
 
     async function replaceSpacesInTitle(title) {
@@ -188,9 +190,9 @@ async function procesarDatosPeliculas() {
             defaultViewport: null,
             args: ['--no-sandbox'] // Agrega esta línea
         });
-        
+
         const page = await
-        browser.newPage();
+            browser.newPage();
         await page.setExtraHTTPHeaders({ 'Accept-Language': 'es' });
 
         const titleFormatted = await replaceSpacesInTitle(title);
@@ -257,7 +259,7 @@ async function procesarDatosPeliculas() {
             }
         }
         //Crear un archivo JSON con los datos de las películas extraídas 
-        fs.writeFileSync('datosPeliculas.json', JSON.stringify(allMoviesData, null, 2));        
+        fs.writeFileSync('datosPeliculas.json', JSON.stringify(allMoviesData, null, 2));
         console.timeEnd("Tiempo de ejecución");
     }
 
@@ -279,11 +281,5 @@ async function procesarDatosPeliculas() {
     });
 }
 
-// Llamar a la función para procesar los datos de películas
-
-async function main() {
-    await scrapeo(2015, 2015);
-    await procesarDatosPeliculas();
-}
-
-main();
+// scrapeo(2016, 2016).then(() => {//Año de inicio y fin de los premios a extraer y then para ejecutar la función de procesar datos de películas una vez que se hayan extraído los datos de los premios
+procesarDatosPeliculas();

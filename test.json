@@ -1,0 +1,45 @@
+{
+  "2016": {
+    "BAFTA Awards": [
+      {
+        "CATEGORIA": "Best Film",
+        "nominados": [
+          {
+            "ID": "tt1663202",
+            "URL": "https://www.imdb.com/title/tt1663202/",
+            "PREMIOS": "https://www.imdb.com/title/tt1663202/awards",
+            "TITULO": "The Revenant",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._SL110_CR21,0,74,110_AL_.jpg"
+          }
+        ],
+        "GANADOR": "The Revenant"
+      },
+      {
+        "CATEGORIA": "Best Cinematography",
+        "nominados": [
+          {
+            "ID": "tt1663202",
+            "URL": "https://www.imdb.com/title/tt1663202/",
+            "PREMIOS": "https://www.imdb.com/title/tt1663202/awards",
+            "TITULO": "The Revenant",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._SL110_CR21,0,74,110_AL_.jpg"
+          }
+        ],
+        "GANADOR": "The Revenant"
+      },
+      {
+        "CATEGORIA": "Best Editing",
+        "nominados": [
+          {
+            "ID": "tt1392190",
+            "URL": "https://www.imdb.com/title/tt1392190/",
+            "PREMIOS": "https://www.imdb.com/title/tt1392190/awards",
+            "TITULO": "Mad Max: Fury Road",
+            "poster": "https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._SL110_CR21,0,74,110_AL_.jpg"
+          }
+        ],
+        "GANADOR": "Mad Max: Fury Road"
+      }
+    ]
+  }
+}
