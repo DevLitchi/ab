@@ -281,6 +281,6 @@ async function procesarDatosPeliculas() {
     });
 }
 
-scrapeo(2010, 2019).then(() => {
+scrapeo(2015, 2015).then(() => {
     procesarDatosPeliculas();
 });

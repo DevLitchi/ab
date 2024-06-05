@@ -6,11 +6,10 @@ async function scrapeo(year) {
         const browser = await puppeteer.launch({
             headless: true,
             defaultViewport: null,
-            args: ['--no-sandbox'] // Agrega esta línea
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--single-process']
         });
 
-        const eventoanormal = { id: 'ev0000710', name: 'Writers Guild of America, USA' };
-        const directorioEventos = [
+        const eventos = [
             { id: 'ev0000123', name: 'BAFTA Awards' },
             { id: 'ev0000133', name: 'Critics Choice Awards' },
             { id: 'ev0000003', name: 'Oscar' },
@@ -21,7 +20,7 @@ async function scrapeo(year) {
 
         let allNominations = {};
 
-        for (let event of directorioEventos) {
+        for (let event of eventos) {
             const page = await browser.newPage();
             await page.setExtraHTTPHeaders({
                 'Accept-Language': 'en'
@@ -29,7 +28,7 @@ async function scrapeo(year) {
             const eventURL = `https://www.imdb.com/event/${event.id}/${year}/1/`;
             try {
                 await page.goto(eventURL, { waitUntil: 'networkidle2' });
-                await page.waitForSelector('[class="event-widgets__nomination-details"]', { timeout: 5000 });
+                await page.waitForSelector('[class="event-widgets__nomination-details"]', { timeout: 10000 });
 
                 const nominados = await page.evaluate(() => {
                     const a = document.querySelectorAll('.event-widgets__award-categories');
@@ -77,8 +76,7 @@ async function scrapeo(year) {
 
                 await page.close();
             } catch (error) {
-                console.error(`Error en el evento ${event.name} del año ${year}: ES PROBABLE QUE LA PAGINA NO ESTE EN FUNCIONAMIENTO`);
-                console.error(error);
+                console.error(`Error en el evento ${event.name} del año ${year}: ${error}`);
                 await page.close();
             }
         }
@@ -155,7 +153,7 @@ async function extractTitlesByYear(data) {
         for (const awardName in awards) {
             const nominees = awards[awardName];
             nominees.forEach(category => {
-                if (movieCategories.has(category.CATEGORIA)) { // Filtrar solo las categorías de películas
+                if (movieCategories.has(category.CATEGORIA)) {
                     category.nominados.forEach(nominee => {
                         if (nominee.ID && nominee.ID.startsWith('tt') && nominee.TITULO) {
                             titlesByYear[year].add(nominee.TITULO);
@@ -165,11 +163,10 @@ async function extractTitlesByYear(data) {
             });
         }
 
-        // Convertir Set a Array
         titlesByYear[year] = Array.from(titlesByYear[year]);
     }
     console.log("Datos de películas extraídos con éxito.")
-    return titlesByYear; // Devolver un objeto con los títulos por año (cada año es una propiedad) y los títulos son un array de strings únicos     
+    return titlesByYear;
 }
 
 async function procesarDatosPeliculas() {
@@ -184,12 +181,11 @@ async function procesarDatosPeliculas() {
         const browser = await puppeteer.launch({
             headless: true,
             defaultViewport: null,
-            args: ['--no-sandbox'] // Agrega esta línea
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--single-process']
         });
 
-        const page = await
-            browser.newPage();
-        await page.setExtraHTTPHeaders({ 'Accept-Language': 'es' });
+        const page = await browser.newPage();
+        await page.setExtraHTTPHeaders({ 'Accept-Language': 'en' });
 
         const titleFormatted = await replaceSpacesInTitle(title);
         const urls = [
@@ -237,6 +233,11 @@ async function procesarDatosPeliculas() {
         }
 
         await browser.close();
+        
+        if (!datosPeliculas) {
+            datosPeliculas = { "Mensaje": "No se pudo conseguir la información" };
+        }
+
         return datosPeliculas;
     }
 
@@ -253,9 +254,11 @@ async function procesarDatosPeliculas() {
                     allMoviesData[year][title] = movieData;
                 }
             }
+
+            // Write the data to a new file for each year
+            fs.writeFileSync(`datosPeliculas_${year}.json`, JSON.stringify(allMoviesData[year], null, 2));
         }
-        //Crear un archivo JSON con los datos de las películas extraídas 
-        fs.writeFileSync('datosPeliculas.json', JSON.stringify(allMoviesData, null, 2));
+
         console.timeEnd("Tiempo de ejecución");
     }
 
@@ -279,8 +282,16 @@ async function procesarDatosPeliculas() {
 }
 
 (async () => {
-    for (let year = 2015; year <= 2024; year++) {
-        await scrapeo(year);
+    for (let year = 2015; year <= 2024 ; year++) {
+        try {
+            await scrapeo(year);
+        } catch (error) {
+            console.error(`Error procesando el año ${year}:`, error);
+        }
     }
-    await procesarDatosPeliculas();
+    try {
+        await procesarDatosPeliculas();
+    } catch (error) {
+        console.error('Error procesando datos de películas:', error);
+    }
 })();
