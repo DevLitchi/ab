@@ -1,15 +1,24 @@
-import os 
+import os
 import json
 
 def insertarPremios():
-    # Cargar datos de los premios
-    with open('resultado.json') as file:
+    json_dir = 'JSON'
+    
+    # Construir las rutas completas de los archivos
+    premios_peliculas_path = os.path.join(json_dir, 'premiosPeliculas.json')
+    premios_actores_path = os.path.join(json_dir, 'premiosActores.json')
+    datos_combinados_path = os.path.join(json_dir, 'datos_combinados_total.json')
+    
+    # Cargar datos de los premios de películas
+    with open(premios_peliculas_path, 'r') as file:
         data = json.load(file)
+    
     # Cargar datos de los premios de actores
-    with open('resultadoActores.json') as file:
+    with open(premios_actores_path, 'r') as file:
         data3 = json.load(file)
+    
     # Cargar datos de los premios a insertar
-    with open('a.json') as file:
+    with open(datos_combinados_path, 'r') as file:
         data2 = json.load(file)
 
     # Recorrer los premios a insertar
@@ -30,9 +39,10 @@ def insertarPremios():
                         # Agregar la información de premios después del ID
                         film.update({'ID': titulo, 'Premios': premios_info})
 
-    # Guardar los datos actualizados en un nuevo archivo JSON
-    with open('resultado_final.json', 'w') as file:
-        json.dump(data2, file, indent=4, ensure_ascii=False) 
+    # Guardar los datos actualizados en un nuevo archivo JSON dentro de la carpeta JSON
+    resultado_final_path = os.path.join(json_dir, 'resultado_final.json')
+    with open(resultado_final_path, 'w') as file:
+        json.dump(data2, file, indent=4, ensure_ascii=False)
 
 # Ejemplo de uso
 insertarPremios()

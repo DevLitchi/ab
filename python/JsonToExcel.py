@@ -3,7 +3,7 @@ import pandas as pd
 
 def combinar_datos_en_uno():
     # Cargar los datos del archivo JSON
-    with open('resultado_final.json', 'r', encoding='utf-8') as file:
+    with open('JSON/resultado_final.json', 'r', encoding='utf-8') as file:
         datos_combinados_total = json.load(file)
 
     # Crear listas para almacenar los datos en el formato deseado
@@ -130,7 +130,7 @@ def combinar_datos_en_uno():
     df_winners = pd.DataFrame(data_winners)
 
     # Escribir los datos en un archivo Excel con varias hojas
-    with pd.ExcelWriter('DB.xlsx') as writer:
+    with pd.ExcelWriter('db/DB.xlsx') as writer:
         df_tt.to_excel(writer, sheet_name='Peliculas', index=False)
         df_nm.to_excel(writer, sheet_name='Actores', index=False)
         df_er.to_excel(writer, sheet_name='Errores', index=False)

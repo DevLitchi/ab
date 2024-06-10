@@ -3,7 +3,7 @@ const fs = require('fs');
 
 async function obtenerIdsUnicos() {
     console.log("Obteniendo IDs únicos...");
-    const jsonData = fs.readFileSync('C:/Codigos/ProyectoFinal/PROYECTO ROBERTO/JSON_AIO/a.json');
+    const jsonData = fs.readFileSync('C:/Codigos/ProyectoFinal/PROYECTO ROBERTO/JSON/datos_combinados_total.json');
     const data = JSON.parse(jsonData);
     const uniqueIds = new Set();
 
@@ -77,7 +77,7 @@ async function procesarDatosPeliculas() {
     console.timeEnd("Tiempo de ejecución");
 
     // Escribe los datos de las películas en un archivo JSON
-    const outputPath = 'C:/Codigos/ProyectoFinal/PROYECTO ROBERTO/resultadoActores.json';
+    const outputPath = 'C:/Codigos/ProyectoFinal/PROYECTO ROBERTO/premiosActores.json';
     fs.writeFileSync(outputPath, JSON.stringify(movieData, null, 2));
 
     console.log("Datos de películas almacenados en:", outputPath);

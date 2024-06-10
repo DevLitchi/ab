@@ -80,8 +80,8 @@ async function scrapeo(year) {
                 await page.close();
             }
         }
-
-        fs.writeFileSync(`test_${year}.json`, JSON.stringify(allNominations, null, 2));
+        // Escribir los datos en un archivo JSON en la carpeta JSON, el archivo se llamará DataEv_Año.json
+        fs.writeFileSync(`JSON/DataEv_${year}.json`, JSON.stringify(allNominations, null, 2));
         await browser.close();
         resolve();
     });
@@ -256,14 +256,14 @@ async function procesarDatosPeliculas() {
             }
 
             // Write the data to a new file for each year
-            fs.writeFileSync(`datosPeliculas_${year}.json`, JSON.stringify(allMoviesData[year], null, 2));
+            fs.writeFileSync(`JSON/InfoEx_${year}.json`, JSON.stringify(allMoviesData[year], null, 2));
         }
 
         console.timeEnd("Tiempo de ejecución");
     }
 
     for (let year = 2015; year <= 2024; year++) {
-        const ruta = `test_${year}.json`;
+        const ruta = `JSON/DataEV_${year}.json`;
         fs.readFile(ruta, 'utf8', async (err, data) => {
             if (err) {
                 console.error('Error al leer el archivo:', err);
@@ -281,6 +281,9 @@ async function procesarDatosPeliculas() {
     }
 }
 
+
+
+
 (async () => {
     for (let year = 2015; year <= 2024 ; year++) {
         try {
@@ -294,4 +297,8 @@ async function procesarDatosPeliculas() {
     } catch (error) {
         console.error('Error procesando datos de películas:', error);
     }
+
+
+
+   
 })();
