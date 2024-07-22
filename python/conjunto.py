@@ -1,62 +1,37 @@
-import os
 import json
+import os
 
-def combinar_datos(InfoEx, DataEv, año_inicio, año_fin):
-    # Definir la ruta base para los archivos JSON
-    json_dir = 'JSON'
+# Ruta a la carpeta que contiene los archivos JSON
+folder_path = 'JSON'
 
-    archivos_a_eliminar = []
+# Nombres de los archivos JSON
+file_ex = 'DataEx.json'
+file_ev = 'DataEv.json'
 
-    for año in range(año_inicio, año_fin + 1):
-        # Nombre de los archivos para el año actual
-        Info = os.path.join(json_dir, f'{InfoEx}_{año}.json')
-        General = os.path.join(json_dir, f'{DataEv}_{año}.json')
+# Rutas completas a los archivos JSON
+path_ex = os.path.join(folder_path, file_ex)
+path_ev = os.path.join(folder_path, file_ev)
 
-        archivos_a_eliminar.extend([Info, General])
+# Cargar el contenido de los archivos JSON
+with open(path_ex, 'r') as file:
+    data_ex = json.load(file)
 
-        # Verificar que los archivos existen
-        if not os.path.exists(Info):
-            print(f"Archivo no encontrado: {Info}")
-            continue
+with open(path_ev, 'r') as file:
+    data_ev = json.load(file)
 
-        if not os.path.exists(General):
-            print(f"Archivo no encontrado: {General}")
-            continue
+# Aquí puedes combinar los datos según tus necesidades.
+# A continuación, se muestra un ejemplo básico que asume que ambos archivos contienen listas de diccionarios.
 
-        try:
-            # Cargar los datos de las películas
-            with open(Info, 'r', encoding='utf-8') as file:
-                peliculas_data = json.load(file)
+# Combinar los datos (esto depende de la estructura específica de tus archivos JSON)
+combined_data = {
+    'DataEx': data_ex,
+    'DataEv': data_ev
+}
 
-            # Cargar los datos de los premios 
-            with open(General, 'r', encoding='utf-8') as file:
-                premios = json.load(file)
+# Guardar el JSON combinado en un nuevo archivo
+combined_file_path = os.path.join(folder_path, 'CombinedData.json')
 
-            # Combinar los datos
-            for year, awards in premios.items():
-                for award_name, nominees in awards.items():
-                    for nominee in nominees:
-                        for film in nominee['nominados']:
-                            titulo = film['TITULO']
-                            if titulo in peliculas_data:
-                                film.update(peliculas_data[titulo])
+with open(combined_file_path, 'w') as file:
+    json.dump(combined_data, file, indent=4)
 
-            # Escribir los datos combinados en un nuevo archivo dentro de la carpeta "JSON"
-            output_path = os.path.join(json_dir, f'datos_combinados_{año}.json')
-            with open(output_path, 'w', encoding='utf-8') as file:
-                json.dump(premios, file, indent=4, ensure_ascii=False)
-
-        except json.JSONDecodeError as e:
-            print(f"Error al decodificar JSON en {año}: {e}")
-        except Exception as e:
-            print(f"Se produjo un error en el año {año}: {e}")
-
-    # Eliminar los archivos InfoEx y DataEv
-    for archivo in archivos_a_eliminar:
-        if os.path.exists(archivo):
-            try:
-                os.remove(archivo)
-            except Exception as e:
-                print(f"Error al eliminar el archivo {archivo}: {e}")
-# Inyectar los datos desde 2015 hasta 2024
-combinar_datos('InfoEx', 'DataEv', 2015, 2024)
+print(f'Datos combinados guardados en {combined_file_path}')

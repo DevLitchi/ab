@@ -1,0 +1,562 @@
+{
+  "2017": [
+    {
+      "Titulo": "La La Land",
+      "Sinopsis": "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
+      "Categorias": {
+        "Director": "Damien Chazelle",
+        "Producer": "Fred Berger, Jordan Horowitz, Marc Platt, Gary Gilbert",
+        "Screenwriter": "Damien Chazelle",
+        "Distributor": "Lionsgate Films",
+        "Production Co": "Summit Entertainment, Marc Platt Productions, Gilbert Films",
+        "Rating": "PG-13 (Some Language)",
+        "Genre": "Musical, Romance, Comedy, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 25, 2016, Wide",
+        "Release Date (Streaming)": "Apr 11, 2017",
+        "Box Office (Gross USA)": "$151.1M",
+        "Runtime": "2h 8m",
+        "Sound Mix": "DTS, Dolby Digital, Dolby Atmos",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Arrival",
+      "Sinopsis": "Linguistics professor Louise Banks (Amy Adams) leads an elite team of investigators when gigantic spaceships touch down in 12 locations around the world. As nations teeter on the verge of global war, Banks and her crew must race against time to find a way to communicate with the extraterrestrial visitors. Hoping to unravel the mystery, she takes a chance that could threaten her life and quite possibly all of mankind.",
+      "Categorias": {
+        "Director": "Denis Villeneuve",
+        "Producer": "Shawn Levy, Dan Levine, Aaron Ryder, David Linde",
+        "Screenwriter": "Eric Heisserer",
+        "Distributor": "Paramount Pictures",
+        "Production Co": "21 Laps Entertainment, FilmNation, Lava Bear Films",
+        "Rating": "PG-13 (Brief Strong Language)",
+        "Genre": "Sci-Fi, Mystery & Thriller, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 11, 2016, Wide",
+        "Rerelease Date (Theaters)": "Jan 27, 2017",
+        "Release Date (Streaming)": "Jan 31, 2017",
+        "Box Office (Gross USA)": "$100.5M",
+        "Runtime": "1h 56m",
+        "Sound Mix": "Dolby Digital"
+      }
+    },
+    {
+      "Titulo": "I, Daniel Blake",
+      "Sinopsis": "Daniel Blake (Dave Johns) is a 59-year-old widowed carpenter who must rely on welfare after a recent heart attack leaves him unable to work. Despite his doctor's diagnosis, British authorities deny Blake's benefits and tell him to return to his job. As Daniel navigates his way through an agonizing appeal process, he begins to develop a strong bond with a destitute, single mother (Hayley Squires) who's struggling to take care of her two children.",
+      "Categorias": {
+        "Director": "Ken Loach",
+        "Producer": "Rebecca O'Brien",
+        "Screenwriter": "Paul Laverty",
+        "Distributor": "IFC Films",
+        "Production Co": "BBC Films, Sixteen Films, Wild Bunch, Why Not Productions",
+        "Rating": "R (Language)",
+        "Genre": "Drama",
+        "Original Language": "British English",
+        "Release Date (Theaters)": "Jun 2, 2017, Limited",
+        "Release Date (Streaming)": "Aug 15, 2017",
+        "Box Office (Gross USA)": "$258.2K",
+        "Runtime": "1h 37m",
+        "Sound Mix": "Dolby Digital",
+        "Aspect Ratio": "Flat (1.85:1)"
+      }
+    },
+    {
+      "Titulo": "Manchester by the Sea",
+      "Sinopsis": "After the death of his older brother Joe, Lee Chandler (Casey Affleck) is shocked that Joe has made him sole guardian of his teenage nephew Patrick. Taking leave of his job as a janitor in Boston, Lee reluctantly returns to Manchester-by-the-Sea, the fishing village where his working-class family has lived for generations. There, he is forced to deal with a past that separated him from his wife, Randi (Michelle Williams), and the community where he was born and raised.",
+      "Categorias": {
+        "Director": "Kenneth Lonergan",
+        "Producer": "Matt Damon, Kimberly Steward, Chris Moore, Lauren Beck, Kevin J. Walsh",
+        "Screenwriter": "Kenneth Lonergan",
+        "Distributor": "Roadside Attractions, Amazon Studios",
+        "Production Co": "Roadside Attractions, Big Indie Pictures",
+        "Rating": "R (Some Sexual Content|Language Throughout)",
+        "Genre": "Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 16, 2016, Wide",
+        "Release Date (Streaming)": "Feb 7, 2017",
+        "Box Office (Gross USA)": "$47.7M",
+        "Runtime": "2h 17m"
+      }
+    },
+    {
+      "Titulo": "Moonlight",
+      "Sinopsis": "A look at three defining chapters in the life of Chiron, a young black man growing up in Miami. His epic journey to manhood is guided by the kindness, support and love of the community that helps raise him.",
+      "Categorias": {
+        "Director": "Barry Jenkins",
+        "Producer": "Adele Romanski, Dede Gardner, Jeremy Kleiner",
+        "Screenwriter": "Barry Jenkins",
+        "Distributor": "A24",
+        "Production Co": "Plan B Entertainment, Upload Films, Pastel",
+        "Rating": "R (Drug Use|Brief Violence|Language Throughout|Some Sexuality)",
+        "Genre": "Drama, LGBTQ+",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 18, 2016, Wide",
+        "Release Date (Streaming)": "Feb 21, 2017",
+        "Box Office (Gross USA)": "$27.9M",
+        "Runtime": "1h 51m",
+        "Sound Mix": "Dolby Digital",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "American Honey",
+      "Sinopsis": "Star (Sasha Lane), an adolescent girl from a troubled home, runs away with a traveling sales crew that drives across the American Midwest selling subscriptions door-to-door. Finding her feet in this gang of teenagers, one of whom is Jake (Shia LaBeouf), she soon gets into the group's lifestyle of hard-partying nights, law-bending days and young love.",
+      "Categorias": {
+        "Director": "Andrea Arnold",
+        "Producer": "Lars Knudsen, Jay Van Hoy, Pouya Shahbazian, Alice Weinberg, Thomas Benski, Lucas Ochoa",
+        "Screenwriter": "Andrea Arnold",
+        "Distributor": "A24",
+        "Production Co": "Parts & Labor, Pulse Films",
+        "Rating": "R (Graphic Nudity|Drug/Alcohol Abuse|Language Throughout|Strong Sexual Content)",
+        "Genre": "Comedy, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Sep 30, 2016, Limited",
+        "Release Date (Streaming)": "Dec 27, 2016",
+        "Box Office (Gross USA)": "$662.8K",
+        "Runtime": "2h 42m"
+      }
+    },
+    {
+      "Titulo": "Denial",
+      "Sinopsis": "When university professor Deborah E. Lipstadt includes World War II historian David Irving in a book about Holocaust deniers, Irving accuses her of libel and sparks a legal battle for historical truth. With the burden of proof placed on the accused, Lipstadt and her legal team fight to prove the essential truth that the Holocaust occurred. Based on the book \"History on Trial: My Day in Court with a Holocaust Denier.\"",
+      "Categorias": {
+        "Director": "Mick Jackson",
+        "Producer": "Gary Foster, Russ Krasnoff",
+        "Screenwriter": "David Hare",
+        "Distributor": "Bleecker Street Media",
+        "Production Co": "BBC Films, Shoebox Films, Participant Media",
+        "Rating": "PG-13 (Thematic Material|Brief Strong Language)",
+        "Genre": "Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Oct 21, 2016, Wide",
+        "Release Date (Streaming)": "Dec 27, 2016",
+        "Box Office (Gross USA)": "$4.1M",
+        "Runtime": "1h 50m"
+      }
+    },
+    {
+      "Titulo": "Fantastic Beasts and Where to Find Them",
+      "Sinopsis": "The year is 1926, and Newt Scamander (Eddie Redmayne) has just completed a global excursion to find and document an extraordinary array of magical creatures. Arriving in New York for a brief stopover, he might have come and gone without incident, were it not for a No-Maj (American for Muggle) named Jacob, a misplaced magical case, and the escape of some of Newt's fantastic beasts, which could spell trouble for both the wizarding and No-Maj worlds.",
+      "Categorias": {
+        "Director": "David Yates",
+        "Producer": "David Heyman, J.K. Rowling, Steve Kloves, Lionel Wigram",
+        "Screenwriter": "J.K. Rowling",
+        "Distributor": "Warner Bros. Pictures",
+        "Production Co": "Heyday Films, Nvizible, Warner Bros. Pictures",
+        "Rating": "PG-13 (Some Fantasy/Action Violence)",
+        "Genre": "Fantasy, Adventure",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 18, 2016, Wide",
+        "Release Date (Streaming)": "Mar 8, 2017",
+        "Box Office (Gross USA)": "$234.0M",
+        "Runtime": "2h 7m",
+        "Sound Mix": "Dolby Digital, Datasat, Dolby Atmos",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Notes on Blindness",
+      "Sinopsis": "In 1983, when writer John Hull goes blind just before the birth of his son, he starts making a diary on audio cassette to make sense of all the changes.",
+      "Categorias": {
+        "Director": "Peter Middleton, James Spinney",
+        "Producer": "Mike Brett, Steve Jamison, Jo-Jo Ellison, Alex Usborne",
+        "Screenwriter": "Peter Middleton, James Spinney",
+        "Distributor": "Bond/360",
+        "Genre": "Documentary",
+        "Original Language": "British English",
+        "Release Date (Theaters)": "Nov 16, 2016, Limited",
+        "Release Date (Streaming)": "Apr 13, 2017",
+        "Runtime": "1h 30m",
+        "Sound Mix": "Dolby Atmos"
+      }
+    },
+    {
+      "Titulo": "Under the Shadow",
+      "Sinopsis": "After Shideh's building is hit by a missile during the Iran-Iraq War, a superstitious neighbor suggests that the missile was cursed and might be carrying malevolent Middle-Eastern spirits. She becomes convinced a supernatural force within the building is attempting to possess her daughter Dorsa, and she has no choice but to confront these forces if she is to save her daughter and herself.",
+      "Categorias": {
+        "Director": "Babak Anvari",
+        "Producer": "Emily Leo, Oliver Roskill, Lucan Toh",
+        "Screenwriter": "Babak Anvari",
+        "Distributor": "Vertical Entertainment, XYZ Films",
+        "Production Co": "Wigwam Films",
+        "Rating": "PG-13 (Terror|Scary Images|Brief Language)",
+        "Genre": "Horror, Mystery & Thriller",
+        "Original Language": "Persian",
+        "Release Date (Theaters)": "Oct 7, 2016, Limited",
+        "Release Date (Streaming)": "Jan 17, 2017",
+        "Box Office (Gross USA)": "$25.8K",
+        "Runtime": "1h 24m"
+      }
+    },
+    {
+      "Titulo": "Hell or High Water",
+      "Sinopsis": "Toby is a divorced father who's trying to make a better life for his son. His brother Tanner is an ex-convict with a short temper and a loose trigger finger. Together, they plan a series of heists against the bank that's about to foreclose on their family ranch. Standing in their way is Marcus, a Texas Ranger who's only weeks away from retirement. As the siblings plot their final robbery, they must also prepare for a showdown with a crafty lawman who's not ready to ride off into the sunset.",
+      "Categorias": {
+        "Director": "David Mackenzie",
+        "Producer": "Sidney Kimmel, Peter Berg, Carla Hacken, Julie Yorn",
+        "Screenwriter": "Taylor Sheridan",
+        "Distributor": "CBS Films, Lionsgate Films",
+        "Production Co": "Odd Lot Entertainment, Sidney Kimmel Entertainment, LBI Entertainment, Film 44, CBS Films",
+        "Rating": "R (Language Throughout|Brief Sexuality|Some Strong Violence)",
+        "Genre": "Crime, Drama, Mystery & Thriller, Western, Action",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Aug 19, 2016, Wide",
+        "Release Date (Streaming)": "Nov 8, 2016",
+        "Box Office (Gross USA)": "$27.0M",
+        "Runtime": "1h 37m",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Lion",
+      "Sinopsis": "Five year old Saroo gets lost on a train which takes him thousands of miles across India, away from home and family. Saroo must learn to survive alone in Kolkata, before ultimately being adopted by an Australian couple. Twenty-five years later, armed with only a handful of memories, his unwavering determination, and a revolutionary technology known as Google Earth, he sets out to find his lost family and finally return to his first home.",
+      "Categorias": {
+        "Director": "Garth Davis",
+        "Producer": "Emile Sherman, Iain Canning, Angie Fielder",
+        "Screenwriter": "Luke Davies",
+        "Distributor": "Weinstein Co.",
+        "Production Co": "See-Saw Films, Sunstar Entertainment, Aquarius Films",
+        "Rating": "PG-13 (Thematic Material|Some Sensuality)",
+        "Genre": "Drama, Biography",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 21, 2016, Wide",
+        "Release Date (Streaming)": "Apr 1, 2017",
+        "Box Office (Gross USA)": "$51.7M",
+        "Runtime": "2h 1m"
+      }
+    },
+    {
+      "Titulo": "Hacksaw Ridge",
+      "Sinopsis": "The true story of Pfc. Desmond T. Doss (Andrew Garfield), who won the Congressional Medal of Honor despite refusing to bear arms during WWII on religious grounds. Doss was drafted and ostracized by fellow soldiers for his pacifist stance but went on to earn respect and adoration for his bravery, selflessness and compassion after he risked his life -- without firing a shot -- to save 75 men in the Battle of Okinawa.",
+      "Categorias": {
+        "Director": "Mel Gibson",
+        "Producer": "Bill Mechanic, David Permut, Terry Benedict, Paul Currie, Bruce Davey, William D. Johnson, Tyler Thompson, Brian Oliver",
+        "Screenwriter": "Andrew Knight, Robert Schenkkan",
+        "Distributor": "Lionsgate Films",
+        "Production Co": "Tunnel Post, Kylin Pictures, Pandemonium, Demarest Films, Cross Creek Pictures, IM Global",
+        "Rating": "R (Grisly Bloody Images|Graphic War Violence)",
+        "Genre": "War, History, Drama, Biography",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 4, 2016, Wide",
+        "Release Date (Streaming)": "Feb 7, 2017",
+        "Box Office (Gross USA)": "$67.0M",
+        "Runtime": "2h 19m",
+        "Sound Mix": "SDDS, Dolby Digital, Dolby Atmos",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Hidden Figures",
+      "Sinopsis": "Three brilliant African American women at NASA -- Katherine Johnson, Dorothy Vaughan and Mary Jackson -- serve as the brains behind one of the greatest operations in history: the launch of astronaut John Glenn into orbit, a stunning achievement that restored the nation's confidence, turned around the Space Race and galvanized the world.",
+      "Categorias": {
+        "Director": "Theodore Melfi",
+        "Producer": "Donna Gigliotti, Peter Chernin, Jenno Topping, Pharrell Williams, Theodore Melfi",
+        "Screenwriter": "Allison Schroeder, Theodore Melfi",
+        "Distributor": "20th Century Fox",
+        "Production Co": "Chernin Entertainment, Levantine Films",
+        "Rating": "PG (Thematic Elements|Some Language)",
+        "Genre": "History, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Jan 6, 2017, Wide",
+        "Release Date (Streaming)": "Mar 28, 2017",
+        "Box Office (Gross USA)": "$169.3M",
+        "Runtime": "2h 7m",
+        "Sound Mix": "Dolby Digital"
+      }
+    },
+    {
+      "Titulo": "Nocturnal Animals",
+      "Sinopsis": "A successful Los Angeles art-gallery owner's idyllic life is marred by the constant traveling of her handsome second husband. While he is away, she is shaken by the arrival of a manuscript written by her first husband, who she has not seen in years. The manuscript tells the story of a teacher who finds a trip with his family turning into a nightmare. As Susan reads the book, it forces her to examine her past and confront some dark truths.",
+      "Categorias": {
+        "Director": "Tom Ford",
+        "Producer": "Tom Ford, Robert Salerno",
+        "Screenwriter": "Tom Ford",
+        "Distributor": "Focus Features",
+        "Production Co": "Focus Features, Artina Films, Fade to Black Productions",
+        "Rating": "R (Language|Graphic Nudity|Menace|Violence)",
+        "Genre": "Mystery & Thriller, Crime, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 9, 2016, Wide",
+        "Release Date (Streaming)": "Feb 7, 2017",
+        "Box Office (Gross USA)": "$10.4M",
+        "Runtime": "1h 56m",
+        "Sound Mix": "Dolby Digital"
+      }
+    },
+    {
+      "Titulo": "Doctor Strange",
+      "Sinopsis": "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.",
+      "Categorias": {
+        "Director": "Scott Derrickson",
+        "Producer": "Kevin Feige",
+        "Screenwriter": "Jon Spaihts, Scott Derrickson, C. Robert Cargill",
+        "Distributor": "Walt Disney",
+        "Production Co": "Marvel Studios, Marvel Entertainment",
+        "Rating": "PG-13 (Sci-Fi Violence and Action|An Intense Crash Sequence)",
+        "Genre": "Action, Adventure, Fantasy",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 4, 2016, Wide",
+        "Release Date (Streaming)": "Feb 14, 2017",
+        "Box Office (Gross USA)": "$232.6M",
+        "Runtime": "1h 55m",
+        "Sound Mix": "Dolby Digital, Dolby Atmos",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Hail, Caesar!",
+      "Sinopsis": "In the early 1950s, Eddie Mannix is busy at work trying to solve all the problems of the actors and filmmakers at Capitol Pictures. His latest assignments involve a disgruntled director, a singing cowboy, a beautiful swimmer and a handsome dancer. As if all this wasn't enough, Mannix faces his biggest challenge when Baird Whitlock gets kidnapped while in costume for the swords-and-sandals epic \"Hail, Caesar!\" If the studio doesn't pay $100,000, it's the end of the line for the movie star.",
+      "Categorias": {
+        "Director": "Joel Coen, Ethan Coen",
+        "Producer": "Joel Coen, Ethan Coen, Tim Bevan, Eric Fellner",
+        "Screenwriter": "Joel Coen, Ethan Coen",
+        "Distributor": "Universal Pictures",
+        "Production Co": "Working Title Films",
+        "Rating": "PG-13 (Some Suggestive Content|Smoking)",
+        "Genre": "Comedy",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Feb 5, 2016, Wide",
+        "Release Date (Streaming)": "Oct 4, 2016",
+        "Box Office (Gross USA)": "$30.0M",
+        "Runtime": "1h 46m",
+        "Sound Mix": "Datasat, Dolby Digital",
+        "Aspect Ratio": "Flat (1.85:1)"
+      }
+    },
+    {
+      "Titulo": "Jackie",
+      "Sinopsis": "After her husband's assassination, Jackie Kennedy's (Natalie Portman) world is completely shattered. Traumatized and reeling with grief, over the course of the next week she must confront the unimaginable: consoling their two young children, vacating the home she painstakingly restored, and planning her husband's funeral. Jackie quickly realizes that the next seven days will determine how history will define her husband's legacy - and how she herself will be remembered.",
+      "Categorias": {
+        "Director": "Pablo Larraín",
+        "Producer": "Juan de Dios Larraín, Darren Aronofsky, Mickey Liddell, Scott Franklin, Ari Handel",
+        "Screenwriter": "Noah Oppenheim",
+        "Distributor": "Fox Searchlight",
+        "Production Co": "Protozoa Pictures, Why Not Productions, LD Entertainment",
+        "Rating": "R (Some Language|Brief Strong Violence)",
+        "Genre": "History, Drama, Biography",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Jan 27, 2017, Wide",
+        "Release Date (Streaming)": "Feb 21, 2017",
+        "Box Office (Gross USA)": "$14.0M",
+        "Runtime": "1h 39m"
+      }
+    },
+    {
+      "Titulo": "Allied",
+      "Sinopsis": "Max Vatan (Brad Pitt) and Marianne Beauséjour (Marion Cotillard) are World War II operatives who never reveal their true identities. After falling in love during a risky mission, they hope to leave all that double-dealing behind them and start new lives. Instead, suspicion and danger envelop their marriage as both husband and wife become pitted against each other in an escalating, potentially lethal test that has global consequences.",
+      "Categorias": {
+        "Director": "Robert Zemeckis",
+        "Producer": "Graham King, Robert Zemeckis, Steve Starkey",
+        "Screenwriter": "Steven Knight",
+        "Distributor": "Paramount Pictures",
+        "Production Co": "ImageMovers, Paramount Pictures International, GK Films",
+        "Rating": "R (Language|Brief Drug Use|Some Sexuality/Nudity|Violence)",
+        "Genre": "History, Drama, War, Mystery & Thriller, Romance, Action",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 23, 2016, Wide",
+        "Release Date (Streaming)": "Feb 14, 2017",
+        "Box Office (Gross USA)": "$39.8M",
+        "Runtime": "1h 59m",
+        "Sound Mix": "Dolby Digital",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Florence Foster Jenkins",
+      "Sinopsis": "In the 1940s, New York socialite Florence Foster Jenkins (Meryl Streep) dreams of becoming a great opera singer. Unfortunately, her ambition far exceeds her talent. The voice Florence hears in her head is beautiful, but to everyone else it is quite lousy. Her husband St. Clair goes to extreme lengths to make sure his wife never finds out how awful she truly is. When Florence announces her plans for a concert at Carnegie Hall, St. Clair soon realizes that he's facing his greatest challenge yet.",
+      "Categorias": {
+        "Director": "Stephen Frears",
+        "Producer": "Michael Kuhn, Tracey Seaward",
+        "Screenwriter": "Nicholas Martin",
+        "Distributor": "Paramount Pictures",
+        "Production Co": "Qwerty Films",
+        "Rating": "PG-13 (Brief Suggestive Material)",
+        "Genre": "Biography, Comedy, Drama, Music",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Aug 12, 2016, Wide",
+        "Rerelease Date (Theaters)": "Dec 2, 2016",
+        "Release Date (Streaming)": "Nov 30, 2016",
+        "Box Office (Gross USA)": "$27.4M",
+        "Runtime": "1h 50m",
+        "Sound Mix": "Dolby Digital"
+      }
+    },
+    {
+      "Titulo": "Deepwater Horizon",
+      "Sinopsis": "On April 20, 2010, the Deepwater Horizon drilling rig explodes in the Gulf of Mexico, igniting a massive fireball that kills several crew members. Chief electronics technician Mike Williams (Mark Wahlberg) and his colleagues find themselves fighting for survival as the heat and the flames become stifling and overwhelming. Banding together, the co-workers must use their wits to make it out alive amid all the chaos.",
+      "Categorias": {
+        "Director": "Peter Berg",
+        "Producer": "Lorenzo di Bonaventura, Mark Vahradian, Stephen Levinson, David Womark, Mark Wahlberg",
+        "Screenwriter": "Matthew Michael Carnahan, Matthew Sand",
+        "Distributor": "Lionsgate Films",
+        "Production Co": "Participant Media, Di Bonaventura Pictures, Leverage Entertainment, Closest to the Hole, Warner Bros. Records",
+        "Rating": "PG-13 (Disturbing Images|Brief Strong Language|Intense Disaster Sequences)",
+        "Genre": "Mystery & Thriller, Action, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Sep 30, 2016, Wide",
+        "Release Date (Streaming)": "Mar 22, 2017",
+        "Box Office (Gross USA)": "$61.4M",
+        "Runtime": "1h 47m",
+        "Sound Mix": "Dolby Atmos, DTS",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "The Jungle Book",
+      "Sinopsis": "Raised by a family of wolves since birth, Mowgli (Neel Sethi) must leave the only home he's ever known when the fearsome tiger Shere Khan (Idris Elba) unleashes his mighty roar. Guided by a no-nonsense panther (Ben Kingsley) and a free-spirited bear (Bill Murray), the young boy meets an array of jungle animals, including a slithery python and a smooth-talking ape. Along the way, Mowgli learns valuable life lessons as his epic journey of self-discovery leads to fun and adventure.",
+      "Categorias": {
+        "Director": "Jon Favreau",
+        "Producer": "Jon Favreau, Brigham Taylor",
+        "Screenwriter": "Justin Marks",
+        "Distributor": "Walt Disney",
+        "Production Co": "Fairview Entertainment",
+        "Rating": "PG (Some Sequences of Scary Action|Peril)",
+        "Genre": "Kids & Family, Adventure, Action, Fantasy",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Apr 15, 2016, Wide",
+        "Release Date (Streaming)": "Aug 23, 2016",
+        "Box Office (Gross USA)": "$364.0M",
+        "Runtime": "1h 45m",
+        "Sound Mix": "Dolby Atmos",
+        "Aspect Ratio": "Flat (1.85:1)"
+      }
+    },
+    {
+      "Titulo": "Rogue One: A Star Wars Story",
+      "Sinopsis": "Former scientist Galen Erso lives on a farm with his wife and young daughter, Jyn. His peaceful existence comes crashing down when the evil Orson Krennic takes him away from his beloved family. Many years later, Galen becomes the Empire's lead engineer for the most powerful weapon in the galaxy, the Death Star. Knowing that her father holds the key to its destruction, Jyn joins forces with a spy and other resistance fighters to steal the space station's plans for the Rebel Alliance.",
+      "Categorias": {
+        "Director": "Gareth Edwards",
+        "Producer": "Kathleen Kennedy, Allison Shearmur, Simon Emanuel",
+        "Screenwriter": "Chris Weitz, Tony Gilroy",
+        "Distributor": "Walt Disney",
+        "Production Co": "Lucasfilm Ltd.",
+        "Rating": "PG-13 (Sci-Fi Violence and Action)",
+        "Genre": "Sci-Fi, Adventure, Action, Fantasy",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 16, 2016, Wide",
+        "Release Date (Streaming)": "Mar 24, 2017",
+        "Box Office (Gross USA)": "$533.2M",
+        "Runtime": "2h 14m",
+        "Sound Mix": "Dolby Digital, Dolby Atmos",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Kubo and the Two Strings",
+      "Sinopsis": "Young Kubo's (Art Parkinson) peaceful existence comes crashing down when he accidentally summons a vengeful spirit from the past. Now on the run, Kubo joins forces with Monkey (Charlize Theron) and Beetle (Matthew McConaughey) to unlock a secret legacy. Armed with a magical instrument, Kubo must battle the Moon King (Ralph Fiennes) and other gods and monsters to save his family and solve the mystery of his fallen father, the greatest samurai warrior the world has ever known.",
+      "Categorias": {
+        "Director": "Travis Knight",
+        "Producer": "Arianne Sutner, Travis Knight",
+        "Screenwriter": "Marc Haimes, Chris Butler",
+        "Distributor": "Focus Features",
+        "Production Co": "Laika, Focus Features",
+        "Rating": "PG (Scary Images|Action and Peril|Thematic Elements)",
+        "Genre": "Kids & Family, Fantasy, Adventure, Action, Animation",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Aug 19, 2016, Wide",
+        "Release Date (Streaming)": "Nov 8, 2016",
+        "Box Office (Gross USA)": "$48.0M",
+        "Runtime": "1h 42m",
+        "Sound Mix": "Dolby Digital",
+        "Aspect Ratio": "Scope (2.35:1)"
+      }
+    },
+    {
+      "Titulo": "Finding Dory",
+      "Sinopsis": "Dory (Ellen DeGeneres) is a wide-eyed, blue tang fish who suffers from memory loss every 10 seconds or so. The one thing she can remember is that she somehow became separated from her parents as a child. With help from her friends Nemo and Marlin, Dory embarks on an epic adventure to find them. Her journey brings her to the Marine Life Institute, a conservatory that houses diverse ocean species. Dory now knows that her family reunion will only happen if she can save mom and dad from captivity.",
+      "Categorias": {
+        "Director": "Andrew Stanton",
+        "Producer": "Lindsey Collins",
+        "Screenwriter": "Andrew Stanton, Victoria Strouse",
+        "Distributor": "Walt Disney",
+        "Production Co": "Pixar Animation Studios, Walt Disney Pictures",
+        "Rating": "PG (Mild Thematic Elements)",
+        "Genre": "Kids & Family, Comedy, Adventure, Animation",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Jun 17, 2016, Wide",
+        "Release Date (Streaming)": "Oct 25, 2016",
+        "Box Office (Gross USA)": "$486.2M",
+        "Runtime": "1h 43m",
+        "Sound Mix": "Dolby Atmos, Datasat, DTS, Dolby Digital, SDDS",
+        "Aspect Ratio": "Flat (1.85:1)"
+      }
+    },
+    {
+      "Titulo": "Moana",
+      "Sinopsis": "An adventurous teenager sails out on a daring mission to save her people. During her journey, Moana meets the once-mighty demigod Maui, who guides her in her quest to become a master way-finder. Together they sail across the open ocean on an action-packed voyage, encountering enormous monsters and impossible odds. Along the way, Moana fulfills the ancient quest of her ancestors and discovers the one thing she always sought: her own identity.",
+      "Categorias": {
+        "Director": "John Musker, Ron Clements",
+        "Producer": "Osnat Shurer",
+        "Screenwriter": "Jared Bush",
+        "Distributor": "Walt Disney",
+        "Production Co": "Walt Disney Animation Studios",
+        "Rating": "PG (Peril|Brief Thematic Elements|Some Scary Images)",
+        "Genre": "Kids & Family, Musical, Comedy, Adventure, Animation",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Nov 23, 2016, Wide",
+        "Rerelease Date (Theaters)": "Jan 20, 2017",
+        "Release Date (Streaming)": "Feb 21, 2017",
+        "Box Office (Gross USA)": "$248.8M",
+        "Runtime": "1h 47m",
+        "Sound Mix": "Dolby Digital, SDDS, Dolby Atmos",
+        "Aspect Ratio": "Digital 2.39:1"
+      }
+    },
+    {
+      "Titulo": "Zootopia",
+      "Sinopsis": "From the largest elephant to the smallest shrew, the city of Zootopia is a mammal metropolis where various animals live and thrive. When Judy Hopps (Ginnifer Goodwin) becomes the first rabbit to join the police force, she quickly learns how tough it is to enforce the law. Determined to prove herself, Judy jumps at the opportunity to solve a mysterious case. Unfortunately, that means working with Nick Wilde (Jason Bateman), a wily fox who makes her job even harder.",
+      "Categorias": {
+        "Director": "Byron Howard, Rich Moore",
+        "Producer": "Clark Spencer",
+        "Screenwriter": "Jared Bush, Phil Johnston",
+        "Distributor": "Walt Disney",
+        "Production Co": "Walt Disney Animation Studios",
+        "Rating": "PG (Rude Humor|Action|Some Thematic Elements)",
+        "Genre": "Kids & Family, Comedy, Adventure, Animation",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Mar 4, 2016, Wide",
+        "Release Date (Streaming)": "Jun 7, 2016",
+        "Runtime": "1h 48m",
+        "Sound Mix": "Dolby Atmos"
+      }
+    },
+    {
+      "Titulo": "Fences",
+      "Sinopsis": "Troy Maxson (Denzel Washington) makes his living as a sanitation worker in 1950s Pittsburgh. Maxson once dreamed of becoming a professional baseball player, but was deemed too old when the major leagues began admitting black athletes. Bitter over his missed opportunity, Troy creates further tension in his family when he squashes his son's (Jovan Adepo) chance to meet a college football recruiter.",
+      "Categorias": {
+        "Director": "Denzel Washington",
+        "Producer": "Scott Rudin, Denzel Washington, Todd Black",
+        "Screenwriter": "August Wilson",
+        "Distributor": "Paramount Pictures",
+        "Production Co": "Paramount Pictures, Sony Classical, Scott Rudin Productions",
+        "Rating": "PG-13 (Some Suggestive References|Language|Thematic Elements)",
+        "Genre": "Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Dec 25, 2016, Wide",
+        "Release Date (Streaming)": "Feb 24, 2017",
+        "Box Office (Gross USA)": "$57.6M",
+        "Runtime": "2h 13m",
+        "Sound Mix": "Dolby Digital"
+      }
+    },
+    {
+      "Titulo": "20th Century Women",
+      "Sinopsis": "In 1979 Santa Barbara, Calif., Dorothea Fields is a determined single mother in her mid-50s who is raising her adolescent son, Jamie, at a moment brimming with cultural change and rebellion. Dorothea enlists the help of two younger women -- Abbie, a free-spirited punk artist living as a boarder in the Fields' home and Julie, a savvy and provocative teenage neighbor -- to help with Jamie's upbringing.",
+      "Categorias": {
+        "Director": "Mike Mills",
+        "Producer": "Anne Carey, Megan Ellison, Youree Henley",
+        "Screenwriter": "Mike Mills",
+        "Distributor": "A24",
+        "Production Co": "Annapurna Pictures, Modern People, Archer Gray",
+        "Rating": "R (Language|Brief Drug Use|Sexual Material|Some Nudity)",
+        "Genre": "Comedy, Drama",
+        "Original Language": "English",
+        "Release Date (Theaters)": "Jan 20, 2017, Wide",
+        "Release Date (Streaming)": "Apr 14, 2017",
+        "Box Office (Gross USA)": "$5.7M",
+        "Runtime": "1h 58m",
+        "Sound Mix": "Dolby Digital"
+      }
+    }
+  ]
+}

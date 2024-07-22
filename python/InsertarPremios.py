@@ -1,23 +1,23 @@
 import os
 import json
 
-def insertarPremios():
+def insertarPremios(datos_combinados, Nominaciones, año_inicio, año_fin):
     json_dir = 'JSON'
     
-    # Construir las rutas completas de los archivos
-    premios_peliculas_path = os.path.join(json_dir, 'premiosPeliculas.json')
-    premios_actores_path = os.path.join(json_dir, 'premiosActores.json')
-    datos_combinados_path = os.path.join(json_dir, 'datos_combinados_total.json')
+    # Crear un diccionario para almacenar todos los datos de nominaciones de cada año
+    nominaciones_totales = {}
     
-    # Cargar datos de los premios de películas
-    with open(premios_peliculas_path, 'r') as file:
-        data = json.load(file)
+    # Cargar datos de nominaciones desde año_inicio hasta año_fin
+    for año in range(año_inicio, año_fin + 1):
+        Nominaciones_path = os.path.join(json_dir, f'{Nominaciones}_{año}.json')
+        with open(Nominaciones_path, 'r') as file:
+            data = json.load(file)
+            nominaciones_totales.update(data)
     
-    # Cargar datos de los premios de actores
-    with open(premios_actores_path, 'r') as file:
-        data3 = json.load(file)
+    # Construir la ruta completa del archivo de datos combinados
+    datos_combinados_path = os.path.join(json_dir, f'{datos_combinados}.json')
     
-    # Cargar datos de los premios a insertar
+    # Cargar datos combinados
     with open(datos_combinados_path, 'r') as file:
         data2 = json.load(file)
 
@@ -30,19 +30,15 @@ def insertarPremios():
                 # Recorrer las películas nominadas
                 for film in nominee['nominados']:
                     titulo = film['ID']
-                    if titulo in data:
-                        premios_info = data[titulo]
+                    if titulo in nominaciones_totales:
+                        premios_info = nominaciones_totales[titulo]
                         # Agregar la información de premios después del ID
                         film.update({'ID': titulo, 'Premios': premios_info})
-                    elif titulo in data3:
-                        premios_info = data3[titulo]
-                        # Agregar la información de premios después del ID
-                        film.update({'ID': titulo, 'Premios': premios_info})
-
+                    
     # Guardar los datos actualizados en un nuevo archivo JSON dentro de la carpeta JSON
     resultado_final_path = os.path.join(json_dir, 'resultado_final.json')
     with open(resultado_final_path, 'w') as file:
         json.dump(data2, file, indent=4, ensure_ascii=False)
 
 # Ejemplo de uso
-insertarPremios()
+insertarPremios('datos_combinados_total', 'Nominaciones', 2015, 2024)
